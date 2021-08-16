@@ -29,8 +29,9 @@
           const base64 = base64Input.value;
           const output = outputSelect.value;
 
+          // decode comes from scte35.wasm
           const decoded = decode(base64, output);
-          console.log(decoded)
+
           decodedDiv.innerText = decoded;
         }
       });
